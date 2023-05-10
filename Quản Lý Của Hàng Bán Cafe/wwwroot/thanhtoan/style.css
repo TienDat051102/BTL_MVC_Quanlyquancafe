@@ -1,0 +1,260 @@
+*:focus {
+  outline: none;
+}
+
+.left {
+  width: 70%;
+  float: left;
+  clear: both;
+}
+
+.right {
+  width: 30%;
+  float: right;
+  margin-bottom: 25px;
+}
+
+body {
+  background: -moz-linear-gradient(-45deg, #e67e22 0%, #f39c12 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #e67e22 0%, #f39c12 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: auto;
+  min-height: calc(100vh);
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+body #wrapper {
+  height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+body #wrapper #container {
+  background: white;
+  height: 440px;
+  min-width: 600px;
+  width: 600px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.2);
+}
+body #wrapper #container #left-col {
+  width: 40%;
+  min-width: 240px;
+  height: 100%;
+  float: left;
+  background: #34495e;
+}
+body #wrapper #container #left-col #left-col-cont {
+  margin: 20px 25px;
+  color: white;
+}
+body #wrapper #container #left-col #left-col-cont h2 {
+  margin: 25px 0 0 0;
+}
+body #wrapper #container #left-col #left-col-cont div.item {
+  margin: 30px 0;
+  clear: both;
+}
+body #wrapper #container #left-col #left-col-cont div.item .img-col {
+  width: 30%;
+  float: left;
+}
+body #wrapper #container #left-col #left-col-cont div.item .img-col img {
+  width: 100%;
+  max-height: 100px;
+}
+body #wrapper #container #left-col #left-col-cont div.item .meta-col {
+  width: 70%;
+  float: right;
+}
+body #wrapper #container #left-col #left-col-cont div.item .meta-col h3 {
+  font-size: 0.7em;
+  margin: 10px 0 0 5px;
+}
+body #wrapper #container #left-col #left-col-cont div.item .meta-col p {
+  font-size: 0.9em;
+  margin: 5px 0 0 5px;
+  opacity: 0.5;
+}
+body #wrapper #container #left-col #left-col-cont p#total {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 0.7em;
+  opacity: 0.5;
+  margin: 115px 0 5px 0;
+}
+body #wrapper #container #left-col #left-col-cont h4#total-price {
+  text-align: left;
+  font-size: 2em;
+  margin: 0;
+}
+body #wrapper #container #left-col #left-col-cont h4#total-price span {
+  color: #1c2834;
+}
+body #wrapper #container #right-col {
+  width: calc(60% - 50px);
+  min-width: 310px;
+  height: 100%;
+  margin: 20px 25px;
+  float: right;
+}
+body #wrapper #container #right-col h2 {
+  float: left;
+  margin: 6px 0 0 0;
+}
+body #wrapper #container #right-col div#logotype {
+  float: right;
+  margin: 4px 0 0 0;
+}
+body #wrapper #container #right-col div#logotype img {
+  width: 60px;
+  height: auto;
+}
+body #wrapper #container #right-col div#logotype img#visa {
+  margin-top: -10px;
+}
+body #wrapper #container form {
+  margin: 80px auto 0;
+  width: 100%;
+}
+body #wrapper #container form #cardnumber {
+  background: white;
+  width: calc(100% - 14px);
+  padding: 4px 6px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+}
+body #wrapper #container form #cardnumber input {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  width: calc(25% - 23px);
+  padding: 4px 6px;
+  letter-spacing: 6px;
+  font-size: 0.9em;
+  border: none;
+  background: none;
+}
+body #wrapper #container form #cardnumber input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+body #wrapper #container form #cardnumber input::-moz-placeholder {
+  opacity: 0.5;
+}
+body #wrapper #container form #cardnumber input[type=number]::-webkit-inner-spin-button, body #wrapper #container form #cardnumber input [type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body #wrapper #container form #cardnumber span.divider {
+  color: rgba(0, 0, 0, 0.3);
+}
+body #wrapper #container form label {
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 14px 0 4px;
+}
+body #wrapper #container form label#cvc-label i {
+  cursor: pointer;
+  margin-left: 3px;
+}
+body #wrapper #container form input {
+  display: block;
+  padding: 6px 8px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  font-size: 0.9em;
+}
+body #wrapper #container form input:focus {
+  border-color: #e67e22;
+}
+body #wrapper #container form input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+body #wrapper #container form input::-moz-placeholder {
+  opacity: 0.5;
+}
+body #wrapper #container form input#cardholder {
+  width: calc(100% - 18px);
+}
+body #wrapper #container form input#cvc {
+  width: calc(100% - 18px);
+}
+body #wrapper #container form select {
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  background: none;
+  width: 90px;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 6px 8px;
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body #wrapper #container form button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 0;
+  font-size: 0.8em;
+}
+body #wrapper #container form button#purchase {
+  background: #e67e22;
+  color: white;
+  margin: 0 0 8px;
+  font-size: 0.9em;
+}
+body #wrapper #container form button#paypal {
+  background: none;
+  border: 1px solid lightgrey;
+}
+body #wrapper #container form button#paypal:hover {
+  background: #003087;
+  border-color: #003087;
+  color: white;
+}
+body #wrapper #container form button#paypal:hover i {
+  color: #009cde;
+}
+body #wrapper #container form button#paypal i {
+  color: #003087;
+}
+body #wrapper #container form p#support {
+  font-size: 0.7em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+body #wrapper #container form p#support a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 1px 2px 1px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+body #wrapper #container form p#support a:hover {
+  padding-bottom: 3px;
+}
+body #dailyui {
+  position: fixed;
+  font-size: 15em;
+  font-weight: 700;
+  margin: 0 0 -55px 0;
+  padding: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+  text-align: right;
+  font-family: "proxima-nova", "Lato", sans-serif;
+}

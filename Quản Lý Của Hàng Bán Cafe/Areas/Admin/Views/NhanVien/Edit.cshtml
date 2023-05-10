@@ -1,0 +1,61 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.NhanVien
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">Sửa Thông Tin Nhân Viên</div>
+            <hr>
+            <form method="post" asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="MaNv" />
+                <div class="form-group">
+                    <label for="input-7">Tên Nhân Viên</label>
+                    <input asp-for="TenNhanVien" type="text" class="form-control form-control-rounded" id="input-7" placeholder="Enter Your Password">
+                </div>
+                <div class="form-group">
+                    <label for="input-12">Ngày Sinh</label>
+                    <input asp-for="NgaySinh" class="form-control form-control-rounded" id="input-12" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-10">Ảnh Nhân Viên</label>
+                    <input asp-for="AnhDaiDien" type="file" class="form-control form-control-rounded" id="input-10" />
+                    <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-12">Địa Chỉ</label>
+                    <input asp-for="DiaChi" class="form-control form-control-rounded" id="input-12" />
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-12">Số Điện Thoại</label>
+                    <input asp-for="Sdt" class="form-control form-control-rounded" id="input-12" />
+                    <span asp-validation-for="Sdt" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-18">Chức Vụ</label>
+                    <select asp-for="ChucVu" class="form-control form-control-rounded" id="input-12">
+                        <option value="CV">Nhân Viên</option>
+                        <option value="CV1">Quản Lý</option>
+                        <option value="CV2">Nhân Viên Pha Chế</option>
+                        <option value="CV3">Nhân Viên Bưng Bê</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input-19">Ghi Chú</label>
+                    <input asp-for="GhiChu" class="form-control form-control-rounded" id="input-19" />
+                    <span asp-validation-for="GhiChu" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

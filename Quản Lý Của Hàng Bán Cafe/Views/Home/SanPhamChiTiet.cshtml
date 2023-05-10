@@ -1,0 +1,226 @@
+﻿@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.DboDanhMucSp
+@{
+    ViewData["Title"] = "Chitiet";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ogani | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../chitiet/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../chitiet/css/style.css" type="text/css">
+</head>
+
+<body style="background-color: sandybrown">
+
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                 src="@Url.Content("../main/Imgaes/"+Model.AnhDaiDien)" alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="img/product/details/product-details-2.jpg"
+                                 src="img/product/details/thumb-1.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-3.jpg"
+                                 src="img/product/details/thumb-2.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-5.jpg"
+                                 src="img/product/details/thumb-3.jpg" alt="">
+                            <img data-imgbigurl="img/product/details/product-details-4.jpg"
+                                 src="img/product/details/thumb-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>@Model.TenSp</h3>
+                        <div class="product__details__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <p>
+                           @Model.GioiThieuSp
+                        </p>
+                        
+                        <form asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.MaSp">
+                            <div class="form-check">
+                                <div class="row">
+                                    <div class="col-md-4" >
+                                        <div style="margin-bottom:-25px">
+                                            <p>Topping</p>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP01" name="TenTopPing" checked>
+                                                Dừa Khô
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP02" name="TenTopPing" checked>
+                                                Nho Khô
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP03" name="TenTopPing" checked>
+                                                Trân Châu Trắng
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP04" name="TenTopPing" checked>
+                                                Trân Châu Đen
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP05" name="TenTopPing" checked>
+                                                Nha Đam
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP06" name="TenTopPing" checked>
+                                                Thạch Dừa
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP07" name="TenTopPing" checked>
+                                                Plan
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                <input class="form-check-input" type="radio" value="TP08" name="TenTopPing" checked>
+                                                Không
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div style="margin-bottom:-25px">
+                                            <p>Đường, đá</p>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">                 
+                                            Đá 40%, Đường 60%
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld2" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            Đá 50%, Đường 50%
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld3" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                            Đá 60%, Đường 40%
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div style="margin-bottom:-25px">
+                                            <p>Size</p>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                             S   
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz2" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                             M
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz3" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                             L
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="" class="container">
+                                <div class="product__details__price" style="text-align:center; padding-bottom:15px">@Model.GiaBanNhoNhat</div>
+                            </div> 
+                            <div class="product__details__quantity">
+                                <div class="quantity">
+                                    <div class="pro-qty">
+                                        <input type="text" value="1" name="SoLuong">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="primary-btn">ADD TO CARD</button>
+                        
+                            <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+
+                        </form>
+                        
+                        
+                        <ul>
+                            <li><b>Availability</b> <span>In Stock</span></li>
+                            <li><b>Shipping</b> <span>01 day shipping. <samp>Free pickup today</samp></span></li>
+                            <li><b>Weight</b> <span>0.5 kg</span></li>
+                            <li>
+                                <b>Share on</b>
+                                <div class="share">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="../chitiet/js/jquery-3.3.1.min.js"></script>
+    <script src="../chitiet/js/bootstrap.min.js"></script>
+    <script src="../chitiet/js/jquery.nice-select.min.js"></script>
+    <script src="../chitiet/js/jquery-ui.min.js"></script>
+    <script src="../chitiet/js/jquery.slicknav.js"></script>
+    <script src="../chitiet/js/mixitup.min.js"></script>
+    <script src="../chitiet/js/owl.carousel.min.js"></script>
+    <script src="../chitiet/js/main.js"></script>
+
+
+</body>
+
+</html>

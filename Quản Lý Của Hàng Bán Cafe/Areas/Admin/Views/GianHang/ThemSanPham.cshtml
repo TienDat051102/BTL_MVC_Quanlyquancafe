@@ -1,0 +1,138 @@
+﻿
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.DboDanhMucSp
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "ThemSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml"; 
+    
+}
+
+<h1>Thêm vào giỏ hàng</h1>
+
+<form asp-action="AddToCart" asp-route-id="@Model.MaSp">
+    <div class="form-check">
+        <div class="row">
+            <div class="col-md-4">
+                <div style="margin-bottom:-25px">
+                    <h4>Topping</h4>
+                </div>
+                <br />
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP01" name="TenTopPing" checked>
+                        Dừa Khô
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP02" name="TenTopPing" checked>
+                        Nho Khô
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP03" name="TenTopPing" checked>
+                        Trân Châu Trắng
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP04" name="TenTopPing" checked>
+                        Trân Châu Đen
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP05" name="TenTopPing" checked>
+                        Nha Đam
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP06" name="TenTopPing" checked>
+                        Thạch Dừa
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP07" name="TenTopPing" checked>
+                        Plan
+                    </label>
+                </div>
+                <div>
+                    <label class="form-check-label" for="defaultCheck1">
+                        <input class="form-check-input" type="radio" value="TP08" name="TenTopPing" checked>
+                        Không
+                    </label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div style="margin-bottom:-25px">
+                    <h4>Đường, đá</h4>
+                </div>
+                <br />
+                <div>
+                    <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Đá 40%, Đường 60%
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld2" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Đá 50%, Đường 50%
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="radio" name="MucDa" id="exampleRadios1" value="Ld3" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Đá 60%, Đường 40%
+                    </label>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div style="margin-bottom:-25px">
+                    <h4>Size</h4>
+                </div>
+                <br />
+                <div>
+                    <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        S
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz2" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        M
+                    </label>
+                </div>
+                <div>
+                    <input class="form-check-input" type="radio" name="size" id="exampleRadios1" value="Sz3" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        L
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product__details__quantity">
+        <div class="quantity">
+            <div class="pro-qty">
+                <input type="number" value="1" name="SoLuong">
+            </div>
+        </div>
+    </div>
+
+    <button  type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Create</button>
+
+    <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

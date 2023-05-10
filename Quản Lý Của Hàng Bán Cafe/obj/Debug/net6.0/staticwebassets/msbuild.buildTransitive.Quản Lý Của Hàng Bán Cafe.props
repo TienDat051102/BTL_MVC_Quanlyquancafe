@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Quản Lý Của Hàng Bán Cafe.props" />
+</Project>

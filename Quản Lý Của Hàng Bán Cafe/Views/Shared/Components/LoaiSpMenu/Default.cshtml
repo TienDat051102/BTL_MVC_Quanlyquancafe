@@ -1,0 +1,18 @@
+﻿@model IEnumerable<LoaiSp>
+<div class="sidebar-categories">
+    <div class="head">Loại Sản Phẩm</div>
+	<ul class="main-categories">
+        @foreach (var item in Model)
+        {
+        <li class="main-nav-list">
+            <a  asp-controller="Home" asp-action="SanPhamTheoLoai" asp-route-maloai="@item.MaLoai">
+                @item.TenLoai
+            </a>
+      
+        </li>
+        }
+	</ul>
+</div>
+
+
+

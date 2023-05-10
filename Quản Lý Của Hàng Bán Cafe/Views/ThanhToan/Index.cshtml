@@ -1,0 +1,233 @@
+﻿@using Quản_Lý_Của_Hàng_Bán_Cafe.Helpers
+@using Microsoft.AspNetCore.Http
+@model KhachHang
+@{
+	Layout = null;
+	var cartchekout = Context.Session.Get<List<Quản_Lý_Của_Hàng_Bán_Cafe.Models.cart.cartItem>>("GioHang");
+}
+
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Nền tảng - Kiến thức cơ bản về WEB | Bảng tin</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <!-- Link font awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-dMy6JcOW6Tg+2jK+yctSwzQ2zxvI+LnzrLGpAOE53up3GTwfCHkptZ8W30KjctdwQekQ0/0x+pOvlF1pYjG3qA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom css - Các file css do chúng ta tự viết -->
+    <link rel="stylesheet" href="../assets/css/app.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
+      <div class="container"></div>
+    </nav>
+    <!-- end header -->
+
+    <main role="main">
+      <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+      <div class="container mt-4">
+          <input type="hidden" name="kh_tendangnhap" value="dnpcuong" />
+
+          <div class="py-5 text-center">
+            <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
+            <h2>Thanh toán</h2>
+            <p class="lead">
+              Vui lòng kiểm tra thông tin Khách hàng, thông tin Giỏ hàng trước
+              khi Đặt hàng.
+            </p>
+                <p>@TempData["thongbao"]</p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+              <h4
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <span class="text-muted">Giỏ hàng</span>
+                <span class="badge badge-secondary badge-pill">@cartchekout.Count()</span>
+              </h4>
+              <ul class="list-group mb-3">
+                  @foreach(var item in cartchekout){
+                                <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                    <div>
+                                        <h6 class="my-0">@item.TenSp</h6>
+                                        <small class="text-muted">@item.GiaBan x @item.SoLuong = @item.ThanhTien</small>
+                                    </div>
+                                   
+                                </li>
+                  }
+            
+
+              </ul>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Mã khuyến mãi"
+                />
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-secondary">
+                    Xác nhận
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 order-md-1">
+              <h4 class="mb-3">Thông tin khách hàng</h4>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="MaKh" />
+                    <input type="hidden" asp-for="UserName" />
+             <form asp-action="index" asp-controller="ThanhToan">
+              <div class="row">
+                <div class="col-md-12">
+                  <label asp-for="TenKh">Họ tên</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="TenKh"
+                                       id="TenKh"
+                    asp-for="TenKh"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label asp-for="DiaChi">Địa chỉ</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                                       name="DiaChi"
+                                       id="DiaChi"
+                    asp-for="DiaChi"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label asp-for="Sdt" >Số Điện thoại</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    asp-for="Sdt"
+
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label asp-for="NgaySinh" for="kh_dienthoai">Ngày Sinh</label>
+                  <input type="date" class="form-control" asp-for="NgaySinh" />
+                 </div>
+                
+             </div>
+
+              <h4 class="mb-3">Hình thức thanh toán</h4>
+
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input
+                    id="httt-1"
+                    name="httt_ma"
+                    type="radio"
+                    class="custom-control-input"
+                    required=""
+                    value="1"
+                  />
+                  <label class="custom-control-label" for="httt-1"
+                    >Tiền mặt</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="httt-2"
+                    name="httt_ma"
+                    type="radio"
+                    class="custom-control-input"
+                    required=""
+                    value="2"
+                  />
+                  <label class="custom-control-label" for="httt-2"
+                    >Chuyển khoản</label
+                  >
+                </div>
+                <div class="custom-control custom-radio">
+                  <input
+                    id="httt-3"
+                    name="httt_ma"
+                    type="radio"
+                    class="custom-control-input"
+                    required=""
+                    value="3"
+                  />
+                  <label class="custom-control-label" for="httt-3"
+                    >Ship COD</label
+                  >
+                </div>
+              </div>
+              <hr class="mb-4" />
+              	<div class="form-group">
+                            <input type="submit" value="Create" class="btn btn-primary btn-lg btn-block" />
+				</div>
+              </form>
+            </div>
+          </div>
+      </div>
+      <!-- End block content -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span
+          >Bản quyền © bởi <a href="https://nentang.vn">Nền Tảng</a> -
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          .</span
+        >
+        <span class="text-muted">Hành trang tới Tương lai</span>
+
+        <p class="float-right">
+          <a href="#">Về đầu trang</a>
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/popperjs/popper.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom script - Các file js do mình tự viết -->
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,30 @@
+﻿@using Quản_Lý_Của_Hàng_Bán_Cafe.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.NhanVien
+@{
+    ViewData["Title"] = "ChiTiet";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+            <div class="card profile-card-2">
+                <div class="card-body pt-5">
+
+                    <h5 class="card-title">Mã Nhân Viên : @Model.MaNv</h5>
+                    <p class="card-text">Tên Nhân Viên: @Model.TenNhanVien</p>
+                    <p class="card-text">Ngày Sinh: @Model.NgaySinh</p>
+                    <p class="card-text">Số Điện Thoai: @Model.Sdt</p>
+                    <p class="card-text">Địa Chỉ: @Model.DiaChi</p>
+                    <p class="card-text">Chức Vụ: @Model.ChucVu</p>
+                    <p class="card-text">Ghi Chú: @Model.GhiChu</p>
+                </div>
+            </div>
+            <a asp-action="index" style="float:right" type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Quay Lại</a>
+        </div>
+</div>
+    <!--end overlay-->
+
+</div>
+

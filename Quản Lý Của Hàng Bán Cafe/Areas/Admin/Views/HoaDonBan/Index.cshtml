@@ -1,0 +1,47 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<Quản_Lý_Của_Hàng_Bán_Cafe.Models.HoaDonBan>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Danh Sách Hóa Đơn
+                @TempData["mes"]
+            </h5>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Mã Hóa Đơn</th>
+                            <th scope="col">Ngày Lập</th>
+                            <th scope="col">Mã NV Thanh Toán</th>
+                            <th scope="col">#</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                         @foreach(var item in Model){
+                        <tr>
+                           
+                                <td>@item.MaHoaDon</td>
+                                <td>@item.NgayLap</td>
+                                <td>@item.MaNv</td>
+                                <td>
+                                    @Html.ActionLink("Details", "ChiTiet", new { id = item.MaHoaDon }) 
+                                </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.PagedListPager(Model,page => Url.Action("Index", new {page=page}),new X.PagedList.Web.Common.PagedListRenderOptions(){
+	LiElementClasses = new List<String> {"page-item"},
+	PageClasses = new List<String> {"page-link"}
+})
+

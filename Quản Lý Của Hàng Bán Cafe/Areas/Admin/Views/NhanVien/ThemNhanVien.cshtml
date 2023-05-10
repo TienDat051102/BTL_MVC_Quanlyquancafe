@@ -1,0 +1,64 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Areas.Admin.Models.ThemNhanVien
+@{
+    ViewData["Title"] = "ThemNhanVien";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">Thêm Nhân Viên</div>
+            <p>@TempData["ThongBao"]</p>
+            <hr>
+            <form method="post" asp-action="ThemNhanVien">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="input-6">Tên Nhân Viên</label>
+                    <input asp-for="TenNhanVien" class="form-control form-control-rounded" id="input-6" />
+                    <span asp-validation-for="TenNhanVien" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-7">Ngày Sinh</label>
+                    <input asp-for="NgaySinh" class="form-control form-control-rounded" id="input-6" />
+                    <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-10">Ảnh</label>
+                    <input asp-for="AnhDaiDien" type="file" class="form-control form-control-rounded" id="input-10" />
+                    <span asp-validation-for="AnhDaiDien" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-12">Số Điện Thoại</label>
+                    <input asp-for="Sdt" class="form-control form-control-rounded" id="input-12" />
+                    <span asp-validation-for="Sdt" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-18">Địa Chỉ</label>
+                    <input asp-for="DiaChi" class="form-control form-control-rounded" id="input-18" />
+                    <span asp-validation-for="DiaChi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-18">Ghi Chú</label>
+                    <input asp-for="GhiChu" class="form-control form-control-rounded" id="input-18" />
+                    <span asp-validation-for="GhiChu" class="text-danger"></span>
+                </div>
+                 <div class="form-group">
+                    <label for="input-18">UserName</label>
+                    <input asp-for="UsernName" class="form-control form-control-rounded" id="input-18" />
+                    <span asp-validation-for="UsernName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="input-18">Password</label>
+                    <input asp-for="Password" class="form-control form-control-rounded" id="input-18" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

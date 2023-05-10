@@ -1,0 +1,73 @@
+﻿@using Quản_Lý_Của_Hàng_Bán_Cafe.Models
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Areas.Admin.Models.luongnhanvien
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "BangLuong";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+    Btlweb02Context db = new Btlweb02Context();
+    var bangluong = db.BangLuongNvs.Where(x => x.MaNv == Model.MaNv).OrderBy(x => x.NgayLam).ToList();
+    var calamviec = db.CaLamViecs.ToList();
+}
+
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+            <div class="card profile-card-2">
+                <div class="card-body pt-5">
+
+                    <h5 class="card-title">Mã Nhân Viên : @Model.MaNv</h5>
+                    <p class="card-text">Tên Nhân Viên : @Model.TenNhanVien</p>
+                    <p class="card-text">Số điện thoại : @Model.Sdt</p>
+                    <p class="card-text">Chức Vụ : @Model.ChucVu</p>
+                    <p class="card-text">Ghi chú : @Model.GhiChu</p>
+                    <p class="card-text">Địa chỉ : @Model.DiaChi</p>
+                    <br />
+                    <p class ="card-text">Tổng tiền lương: @Model.TongLuong</p>
+                    <br />
+                    <a asp-action="ThanhToanLuong" asp-route-id="@Model.MaNv" type="submit" class="btn btn-light btn-round px-5">Quyết Toán</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
+                    </ul>
+                    <div class="tab-content p-3">
+                        <h5 class="mb-3">Nhưng ca làm việc của Nhân Viên: @Model.TenNhanVien</h5>
+                        @foreach (var item in bangluong)
+                        {
+
+                            <div class="tab-pane active" id="profile">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Mã Ca làm việc : @calamviec.SingleOrDefault(x=>x.MaClv == item.Maclv).TenClv</h6>
+                                        <p>
+                                            Ngày làm: @item.NgayLam
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <br />
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--start overlay-->
+    <div class="overlay toggle-menu"></div>
+    <!--end overlay-->
+
+</div>
+

@@ -1,0 +1,146 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<DboDanhMucSp>
+
+@{
+	ViewData["Title"] = "Booth";
+    Layout = "~/Views/Shared/_layoutwebcafe.cshtml";
+}
+<div>
+	
+	<input id="search" type="text" placeholder="Nhập mã hoặc tên sản phẩm" />
+	<button class="btn btn-primary" onclick="tim()">Tìm kiếm</button>
+</div>
+<section class="lattest-product-area pb-40 category-list">
+	<div class="row" id="allsp">
+		<!-- single product -->
+		@foreach (var item in Model)
+		{
+			<div class="col-lg-4 col-md-6">
+				<div class="single-product">
+					<img style="width:200px ; height: 200px " class="img-fluid" src="@Url.Content("../main/Imgaes/"+item.AnhDaiDien)">
+					<div class="product-details">
+						<h6>
+							@item.TenSp
+						</h6>
+						<div class="price">
+							<h6>@item.GiaBanNhoNhat</h6>
+							<h6 class="l-through">@item.GiaBanCaoNhat</h6>
+						</div>
+						<div class="prd-bottom">
+
+							<a asp-controller="home" asp-action="sanphamchitiet" asp-route-id="@item.MaSp" class="social-info" >
+								<span class="bi bi-cart-plus"></span>
+								<p class="hover-text">add to Basket</p>
+							</a>
+							<a href="" class="social-info">
+								<span class="bi bi-arrow-down"></span>
+								<p class="hover-text">view more</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+
+	</div>
+	<script type="text/javascript" src="../../Scripts/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		//function tim() {
+		//	if ($("#search").val() == "") {
+		//		alert("Vui lòng nhập gì đó");
+		//		return;
+		//	}
+		//	$.ajax({
+		//		url: 'https://localhost:7182/api/danhmucsp?ten=' + $("#search").val(),
+		//		method: 'GET',
+		//		contentType: 'json',
+		//		dataType: 'json',
+		//		error: function (response) {
+		//			alert("Tìm kiếm lỗi");
+		//		},
+		//		success: function (reponse) {
+		//			const len = reponse.length;
+		//			console.log(reponse);
+		//			let table = '';
+		//			for (var i = 0; i < len; ++i) {
+		//				table += '<div class="col-lg-4 col-md-6">';
+		//				table += '<div class="single-product" >';
+		//				table += '<img style="width:200px ; height: 200px " class="img-fluid" src = +"Url.Content("../main/Imgaes/"' + reponse[i].anhDaiDien) + '" alt = "" >';
+		//	table += '<div class="product-details" >';
+		//	table += '<h6>' + reponse[i].tenSp + '</h6>';
+		//	table += '< div class="price" >';
+		//	table += '<h6>' + reponse[i].giaBanCaoNhat + '</h6>';
+
+		//	table += '</div>';
+		//	table += '</div>';
+		//	table += '</div>';
+		//	table += '</div>';
+		//	}
+		//	document.getElementById('allsp').innerHTML = table;
+		//}
+		//						});
+		//					}
+		function tim() {
+			if ($("#search").val() == "") {
+				alert("Vui lòng nhập gì đó");
+				return;
+			}
+			$.ajax({
+				url: 'https://localhost:7287/api/timkiem?ten=' + $("#search").val(),
+				method: 'GET',
+				contentType: 'json',
+				dataType: 'json',
+				error: function (response) {
+					alert("Tìm kiếm lỗi");
+				},
+				success: function (reponse) {
+					const len = reponse.length;
+					console.log(reponse);
+					let table = '';
+					for (var i = 0; i < len; ++i) {
+						table = table + '<div class="col-lg-4 col-md-6">';
+						table += '<div class="single-product" >';
+						table = table + '<img style="width:200px ; height: 200px " class="img-fluid" src = "../main/Imgaes/' + reponse[i].anhDaiDien+ '">';
+						table += '<div class="product-details" >';
+						table += '<h6>' + reponse[i].tenSp + '</h6>';
+						table += '<div class ="price" >';
+						table += '<h6>';
+						table += reponse[i].giaBanNhoNhat;
+						table += '</h6>';
+						table += '<h6 class="l-through">' + reponse[i].giaBanCaoNhat+'</h6>';
+						table += '</div>';
+						table += '<div class = "prd-bottom">';
+						table += '<a asp-controller="home" asp-action="sanphamchitiet" asp-route-id="' + reponse[i].maSp + '" class="social-info" >';
+						table += '<span class="bi bi-cart-plus"></span>';
+						table += '<p class="hover-text"> add to Basket </p>';
+						table += '</a>';
+						table += '<a class="social-info">';
+						table += '<span class="bi bi-arrow-down"></span>';
+						table += '<p class="hover-text">view more</p>';
+						table += '</a>';
+						table += '</div>';
+						table += '</div>';
+						table += '</div>';
+						table = table + '</div>';
+					}
+
+					document.getElementById('allsp').innerHTML = table;
+				}
+			});
+		}
+	</script>
+</section>
+<!-- End Best Seller -->
+<!-- Start Filter Bar -->
+<div class="filter-bar d-flex flex-wrap align-items-center">
+	<div class="sorting mr-auto">
+		<select>
+			<option value="1">Show 12</option>
+			<option value="1">Show 12</option>
+			<option value="1">Show 12</option>
+		</select>
+	</div>
+	<div class="pagination">
+		@Html.PagedListPager(Model,page => Url.Action("Index",new{page = page}))
+	</div>
+</div>

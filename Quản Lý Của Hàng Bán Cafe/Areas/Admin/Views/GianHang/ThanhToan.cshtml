@@ -1,0 +1,86 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Quản_Lý_Của_Hàng_Bán_Cafe.Helpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.HoaDonBan
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "ThanhToan";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+    var cartchekout = Context.Session.Get<List<Quản_Lý_Của_Hàng_Bán_Cafe.Models.cart.cartItem>>("GioHang");
+    double tongtien = 0;
+    foreach(var item in cartchekout){
+        tongtien += item.ThanhTien;
+    }
+}
+@TempData["thongbao"]
+<form asp-action="ThanhToan">
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+            <div class="card profile-card-2">
+                <div class="card-body pt-5">
+                    <div class="form-group">
+                        <label for="input-7">Tên Khách Hàng</label>
+                        <select asp-for="MaKh" class="form-control form-control-rounded" id="input-7" asp-items="ViewBag.MaKH"></select>
+                    </div>
+                     <div class="form-group">
+                            <label for="input-7">Bàn</label>
+                            <select asp-for="MaBan" class="form-control form-control-rounded" id="input-7" asp-items="ViewBag.MaBan"></select>
+                     </div>
+                    <div class="form-group">
+                        <label for="input-8">Tên Nhân Viên</label>
+                        <select asp-for="MaNv" class="form-control form-control-rounded" id="input-8" asp-items="ViewBag.MaNv"></select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
+                    </ul>
+                    <div class="tab-content p-3">
+                        <h5 class="mb-3">Danh Sách Giỏ Hàng</h5>
+                        @foreach (var item in cartchekout)
+                        {
+                            <div class="tab-pane active" id="profile">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Tên Sản Phẩm: @item.TenSp</h6>
+                                        <p>
+                                            Giá Tiền: @item.GiaBan
+                                        </p>
+                                        <p>
+                                            Số lượng: @item.SoLuong
+                                        </p>
+                                        <p>
+                                            Thành tiền: @item.ThanhTien
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <br />
+                        }
+                    <h4>Tổng tiền hóa đơn: @tongtien</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Tạo hóa đơn</button>
+        </div>
+
+    <!--start overlay-->
+    <div class="overlay toggle-menu"></div>
+    <!--end overlay-->
+</div>
+</form>
+
+
+

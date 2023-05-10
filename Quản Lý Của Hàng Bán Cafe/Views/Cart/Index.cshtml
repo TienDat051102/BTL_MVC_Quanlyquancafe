@@ -1,0 +1,96 @@
+﻿@model IEnumerable<Quản_Lý_Của_Hàng_Bán_Cafe.Models.cart.cartItem>
+@{
+	ViewData["Title"] = "CartShop";
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-XKXPNFtJnHt+NaKtM7x8UK+LzNkGAtfK1+ILNkp2OthtbsZyk1kKn+ivUFoWbJyHSPGhvoJwDj1gOAK55E9Z1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body style="background-color:sandybrown">
+	<main class="page">
+		<section style="background-color:sandybrown" class="shopping-cart dark">
+			<div class="container">
+				<div class="block-heading">
+					<h2>Shopping Cart</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+				</div>
+				<div class="content">
+					<div class="row">
+						<div class="col-md-12 col-lg-8">
+							<div class="items">
+								@foreach(var item in Model){
+									<div class="product">
+										<div class="row">
+											<div class="col-md-3">
+												<img style="padding-left:15px" class="img-fluid mx-auto d-block image" src="@Url.Content("../main/Imgaes/"+item.AnhDaiDien)">
+											</div>
+											<div class="col-md-8">
+												<div class="info">
+													<div class="row">
+														<div class="col-md-5 product-name">
+															<div class="product-name">
+																<a href="#">@item.TenSp</a>
+																<div class="product-info">
+																	<div>Giá Bán: <span class="value">@item.GiaBan</span></div>
+																	<div>Mức Đá: <span class="value">@item.MaLuongDa</span></div>
+																	<div>Size: <span class="value">@item.MaSize</span></div>
+																	<div>Thêm TopPing: <span class="value">@item.MaTopPing</span></div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-4 quantity">
+															<label for="quantity">Quantity:</label>
+															<input id="quantity" type="number" value="@item.SoLuong" class="form-control quantity-input">
+														</div>
+														<div class="col-md-2 price">
+														 <p>@item.ThanhTien VNĐ</p>
+															<a asp-action="Remove" asp-route-id="@item.MaSp">remove</a>
+														@*	<button asp-action="Remove" asp-route-id="@item.MaSp"  class="btn btn-danger">
+																<i class="fa fa-trash"></i> Xóa
+															</button>*@
+							 							</div>
+
+														@*<a asp-action="Remove" asp-route-id="@item.MaSp"><i class="fa fa-trash"></i> Xóa</a>*@
+								
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								}
+							
+						
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-4">
+							<div class="summary">
+								<h3>Summary</h3>
+					@*			<div class="summary-item"><span class="text">Subtotal</span><span class="price">$360</span></div>
+								<div class="summary-item"><span class="text">Discount</span><span class="price">$0</span></div>
+								<div class="summary-item"><span class="text">Shipping</span><span class="price">$0</span></div>*@
+								<div class="summary-item"><span class="text">Total</span><span class="price">$360</span></div>
+								<a asp-controller="ThanhToan" asp-action="index" class="btn btn-primary btn-lg btn-block">Check Out</a>
+								<a asp-controller="Home" asp-action="index" class="btn btn-primary btn-lg btn-block">Mua Tiếp</a>
+								<a asp-controller="Cart" asp-action="CleanCart" class="btn btn-primary btn-lg btn-block">Xóa Hết</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.LoaiSp
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">Sửa Sản Phẩm</div>
+            <hr>
+            <form method="post" asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="MaLoai" />
+                <div class="form-group">
+                    <label for="input-7">Tên Loại Sản Phẩm</label>
+                    <input asp-for="TenLoai" type="text" class="form-control form-control-rounded" id="input-7" placeholder="Enter Your Password">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,40 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.User
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">Sửa thông tin</div>
+            <hr>
+            <form method="post" asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="UsernName" />
+                <div class="form-group">
+                    <label for="input-7">Password</label>
+                    <input asp-for="Password" type="text" class="form-control form-control-rounded" id="input-7" placeholder="Enter Your Password">
+                </div>
+                <div class="form-group">
+                    <label for="input-8">Loại Tài Khoản</label>
+                    <select asp-for="LoaiUser" class="form-control form-control-rounded" id="input-8" placeholder="Enter LoaiUser">
+                        <option value="KH">Khách Hàng</option>
+                        <option value="NV">Nhân Viên</option>
+                        <option value="QL">Quản Lý</option>
+                        <option value="NVPC">Nhân Viên PC</option>
+                        <option value="NVBB">Nhân Viên BB</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+

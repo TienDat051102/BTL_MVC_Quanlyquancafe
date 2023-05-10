@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Quản_Lý_Của_Hàng_Bán_Cafe.Helpers
+@using Quản_Lý_Của_Hàng_Bán_Cafe.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Quản_Lý_Của_Hàng_Bán_Cafe.Areas.Admin.Models.ThongTinHoaDonNhap
+@{
+    ViewData["Title"] = "DatHang";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+    var cartNhap = Context.Session.Get<List<Quản_Lý_Của_Hàng_Bán_Cafe.Areas.Admin.Models.NhapHang>>("KhoHang");
+    double TongTienHD = 0;
+    foreach(var item in cartNhap){
+        TongTienHD += (double)item.TongTien;
+    }
+}
+<form asp-action="DatHang">
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-lg-4">
+            <div class="card profile-card-2">
+                <div class="card-body pt-5">
+
+                    <div class="form-group">
+                        <label for="input-7">Tên Nhà Cung Cấp</label>
+                        <select asp-for="MaNcc" class="form-control form-control-rounded" id="input-7" asp-items="ViewBag.MaNcc"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-7">Nhân Viên Phụ Trách</label>
+                            <select asp-for="MaNv" class="form-control form-control-rounded" id="input-7" asp-items="ViewBag.MaNv"></select>
+                    </div>
+                        <div class="form-group">
+                            <label for="input-7">Ghi Chú</label>
+                            <input asp-for="GhiChu" class="form-control form-control-rounded" id="input-7" >
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-primary top-icon nav-justified">
+                    </ul>
+                    <div class="tab-content p-3">
+                        <h5 class="mb-3">Danh Sách Hàng Hóa Cần Đặt</h5>
+                        @foreach (var item in cartNhap)
+                        {
+
+                            <div class="tab-pane active" id="profile">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6>Mã Hàng Hóa: @item.MaHh</h6>
+                                        <p>
+                                            Tên Hàng Hóa: @item.TenHh
+                                        </p>
+                                        <p>
+                                            Số Lượng Nhập: @item.SoLuongNhap
+                                        </p>
+                                        <p>
+                                            Đơn Giá: @item.DonGiaNhap
+                                        </p>
+                                        <p>
+                                            Thành Tiền: @item.TongTien
+                                        </p>
+                                    </div>
+                                </div>
+                                <!--/row-->
+                            </div>
+                            <br />
+                        }
+                    </div>
+                    <p>Ngày Đặt: @DateTime.Now</p>
+                        <p>Tổng Tiền : @TongTienHD</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Đặt Hàng</button>
+        </div>
+    <!--start overlay-->
+    <div class="overlay toggle-menu"></div>
+    <!--end overlay-->
+
+</div>
+</form>
+

@@ -1,0 +1,39 @@
+﻿@model Quản_Lý_Của_Hàng_Bán_Cafe.Models.HangHoa
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "NhapHang";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutadmin.cshtml";
+}
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">Thêm Hàng Hóa Vào Giỏ Hàng
+                <a asp-action="index" style="float:right" type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Chọn Lại</a>
+                <br />
+            </div>
+
+<form asp-action="ThemVaoGio" asp-route-id="@Model.MaHh">
+    
+    <div class="form-group">
+        <label for="input-6">Giá Tiền</label>
+        <input type="number" class="form-control form-control-rounded" name="DonGia" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        <div class="quantity">
+            <div class="pro-qty">
+                <label for="input-6">Số Lượng</label>
+                <input class="form-control form-control-rounded" type="number" value="1" name="SoLuong">
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Create</button>
+
+    <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+
+</form>
+</div>
+</div>
+</div>
+
