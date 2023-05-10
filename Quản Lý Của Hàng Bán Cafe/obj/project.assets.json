@@ -10688,11 +10688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Quản Lý WEB Cửa Hàng Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
+      "projectUniqueName": "E:\\BTL_MVC_Quanlyquancafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
       "projectName": "Quản Lý Của Hàng Bán Cafe",
-      "projectPath": "D:\\Quản Lý WEB Cửa Hàng Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
+      "projectPath": "E:\\BTL_MVC_Quanlyquancafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Quản Lý WEB Cửa Hàng Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe\\obj\\",
+      "outputPath": "E:\\BTL_MVC_Quanlyquancafe\\Quản Lý Của Hàng Bán Cafe\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",

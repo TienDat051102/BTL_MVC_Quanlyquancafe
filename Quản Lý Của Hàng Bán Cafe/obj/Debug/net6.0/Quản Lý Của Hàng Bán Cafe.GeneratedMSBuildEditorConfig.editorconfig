@@ -9,205 +9,205 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Quản_Lý_Của_Hàng_Bán_Cafe
 build_property.RootNamespace = Quản_Lý_Của_Hàng_Bán_Cafe
-build_property.ProjectDir = D:\Quản Lý WEB Cửa Hàng Cafe\Quản Lý Của Hàng Bán Cafe\Quản Lý Của Hàng Bán Cafe\
+build_property.ProjectDir = E:\BTL_MVC_Quanlyquancafe\Quản Lý Của Hàng Bán Cafe\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Quản Lý WEB Cửa Hàng Cafe\Quản Lý Của Hàng Bán Cafe\Quản Lý Của Hàng Bán Cafe
+build_property.MSBuildProjectDirectory = E:\BTL_MVC_Quanlyquancafe\Quản Lý Của Hàng Bán Cafe
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/BangLuong/BangLuong.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/BangLuong/BangLuong.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFuZ0x1b25nXEJhbmdMdW9uZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/BangLuong/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/BangLuong/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFuZ0x1b25nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/ChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1NhblBoYW1cQ2hpVGlldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/Edit.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1NhblBoYW1cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1NhblBoYW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/ThemSanPham.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/DanhMucSanPham/ThemSanPham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1NhblBoYW1cVGhlbVNhblBoYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/GioHang.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/GioHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2lhbkhhbmdcR2lvSGFuZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2lhbkhhbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/ThanhToan.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/ThanhToan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2lhbkhhbmdcVGhhbmhUb2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/ThemSanPham.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/GianHang/ThemSanPham.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2lhbkhhbmdcVGhlbVNhblBoYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HoaDonBan/ChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HoaDonBan/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9hRG9uQmFuXENoaVRpZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HoaDonBan/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HoaDonBan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9hRG9uQmFuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/HomeAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/DatHang.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/DatHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvSGFuZ1xEYXRIYW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvSGFuZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/KhoNhap.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/KhoNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvSGFuZ1xLaG9OaGFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/NhapHang.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/KhoHang/NhapHang.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcS2hvSGFuZ1xOaGFwSGFuZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/AddLoai.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/AddLoai.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haVNQXEFkZExvYWkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/ChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haVNQXENoaVRpZXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/Edit.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haVNQXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/LoaiSP/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9haVNQXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/ChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cQ2hpVGlldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/Edit.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/ThemNhanVien.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/NhanVien/ThemNhanVien.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmhhblZpZW5cVGhlbU5oYW5WaWVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/Shared/_layoutadmin.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/Shared/_layoutadmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9sYXlvdXRhZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/ChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/ChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDaGlUaWV0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/Edit.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/ThemTaiKhoan.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Areas/Admin/Views/User/ThemTaiKhoan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxUaGVtVGFpS2hvYW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Access/DangKy.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Access/DangKy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXERhbmdLeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Access/Login.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Access/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Access/QuenMatKhau.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Access/QuenMatKhau.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXFF1ZW5NYXRLaGF1LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Cart/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Home/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Home/Privacy.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Home/SanPhamChiTiet.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Home/SanPhamChiTiet.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW5QaGFtQ2hpVGlldC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Home/SanPhamTheoLoai.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Home/SanPhamTheoLoai.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYW5QaGFtVGhlb0xvYWkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Home/TrangChu.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Home/TrangChu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFuZ0NodS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/Components/LoaiSpMenu/Default.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/Components/LoaiSpMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTG9haVNwTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/Error.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutfooter.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutfooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRmb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutheader.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutheader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXRoZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutwebcafe.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_layoutwebcafe.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sYXlvdXR3ZWJjYWZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/ThanhToan/Index.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/ThanhToan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhhbmhUb2FuXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/_ViewImports.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/_ViewStart.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Quản Lý WEB Cửa Hàng Cafe/Quản Lý Của Hàng Bán Cafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_Layout.cshtml]
+[E:/BTL_MVC_Quanlyquancafe/Quản Lý Của Hàng Bán Cafe/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kyfqkvivsw

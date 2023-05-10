@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rsC/6L10Ogy69YzPqd8w7bd99abBO+kf8YjvYkmxBxFkoIKn8nMR6VISKDXjwdjW/xEWXtx+Zm0qAazdY4Va1Q==",
+  "dgSpecHash": "Vq2MvbWj01z7MhZKHPsIKOi/W2JWCT8EMNwxHJ4iB+eBkwDEZ9HmeNzEPRujoZJwrtR+fCVDW3kOHwfGXKVdUg==",
   "success": true,
-  "projectFilePath": "D:\\Quản Lý WEB Cửa Hàng Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
+  "projectFilePath": "E:\\BTL_MVC_Quanlyquancafe\\Quản Lý Của Hàng Bán Cafe\\Quản Lý Của Hàng Bán Cafe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
